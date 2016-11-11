@@ -1,3 +1,4 @@
+
 ---
 layout: page
 title: "Emby"
@@ -32,3 +33,13 @@ Configuration variables:
 - **api_key** (*Requred*): The api-key you would like home-assistant to use to authenticate.
 - **ssl** (*Optional*): True if you want to connect with https. Be sure to set the port also.
 - **port** (*Optional*): The port number. Defaults to 8096.
+
+## Getting the API Key
+
+To get a API key you need to log into the Admin area of Emby under Manage Server. Scroll down to the Expert sections and Click on Advanced. At the top of the page select the Security tab. You will be presented with a list of existing keys or none if this is your first one. Click on the Add button and given the application an distincitve name. I went with Home Assistant as it seemed like a good idea at the time. 
+
+Once you have the Api Key you can copy it to your configuration. 
+
+To go stright to the security page use the following link, ensure you update the IP address and port if different. 
+
+    http://192.168.0.1:8096/web/serversecurity.html
